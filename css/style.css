@@ -111,8 +111,18 @@ code {
     flex-direction: column;
 }
 
-#submission-btn {
-    margin-top: 5rem;
+#submission-btn
+{
+    background-color: var(--clr-primary-a0);
+    color: var(--clr-text);
+    padding: 0.5rem 1rem;
+    max-width: fit-content;
+    align-self: center;
+}
+
+#navigate-to-age-input-btn
+{
+    margin-top: 0.5rem;
     background-color: var(--clr-primary-a0);
     color: var(--clr-text);
     padding: 0.5rem 1rem;
@@ -123,7 +133,10 @@ code {
 #submission-btn:hover{
     background-color: var(--clr-primary-a30);
 }
-
+#navigate-to-age-input-btn:active {
+    background-color: var(--clr-primary-a50);
+    color: var(--clr-surface-a0);
+}
 #submission-btn:active {
     background-color: var(--clr-primary-a50);
     color: var(--clr-surface-a0);
@@ -132,7 +145,12 @@ code {
 .text-link {
     text-decoration: underline;
 }
-
+.input-container {
+    display: flex;
+    align-items: center;  /* Vertically center input and button */
+    justify-content: center; /* Optional: horizontally center if needed */
+    gap: 1rem;  /* Adds space between input and button */
+}
 .input {
     background-color: white;
     width: 150px;

@@ -23,7 +23,7 @@
 
             <p class="paragraph">These are the messages that should render based upon age's value:</p>
             <ul class="list">
-                <li class="list-item"><code class="inline-code">You can vote and purchase alchol.</code></li>
+                <li class="list-item"><code class="inline-code">You can vote and purchase alcohol.</code></li>
                 <li class="list-item"><code class="inline-code">You can vote, but you cannot purchase alcohol.</code></li>
                 <li class="list-item"><code class="inline-code">You cannot vote and you cannot purchase alcohol.</code></li>
             </ul>
@@ -39,20 +39,22 @@
             </p>
 
 
-            <h3 class="sub-title">Answer Ouput</h3>
-            <label class="label" for="age-input">Enter an age:</label>
-            <input type="number" min="1" max="100" class="input" id="age-input">
-            <p id="response" class="paragraph self-center"></p>
-
-            <button id="submission-btn">Submit</button>
+            <button id="navigate-to-age-input-btn">Go to Age Input Page</button>
 
         </section>
-
         
     </main>
 
     <footer></footer>
 
     <script src="./js/assignment.js"></script>
+    <script>
+        // Adding the navigation button functionality
+        const navigateBtn = document.getElementById("navigate-to-age-input-btn");
+
+        navigateBtn.addEventListener("click", () => {
+            window.location.href = "age-input-assignment.html"; // Navigate to the new page for input
+        });
+    </script>
 </body>
 </html>
